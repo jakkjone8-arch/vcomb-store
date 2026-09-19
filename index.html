@@ -744,7 +744,7 @@ footer .copyright{font-size:.85rem;border-top:1px solid #1e293b;padding-top:20px
   <div class="container">
     <div class="section-title">
       <h2>📝 املأ بياناتك لتأكيد الطلب</h2>
-      <p>سيتم إرسال طلبك مباشرة عبر واتساب</p>
+      <p>سيتم إرسال طلبك مباشرة عبر واتساب إلى الرقم: <strong>0709583307</strong></p>
     </div>
     <form class="order-form" onsubmit="submitOrder(event)">
       <div class="form-group">
@@ -851,13 +851,13 @@ footer .copyright{font-size:.85rem;border-top:1px solid #1e293b;padding-top:20px
 </footer>
 
 <!-- ===== زر واتساب عائم ===== -->
-<a href="https://wa.me/212600000000" class="whatsapp-float" target="_blank" aria-label="تواصل عبر واتساب">
+<a href="https://wa.me/212709583307" class="whatsapp-float" target="_blank" aria-label="تواصل عبر واتساب">
   💬
 </a>
 
 <script>
-/* ===== رقم الواتساب (محفوظ كما هو) ===== */
-const WHATSAPP_NUMBER = "212600000000";
+/* ===== رقم الواتساب الجديد ===== */
+const WHATSAPP_NUMBER = "212709583307";
 
 /* ===== تتبع حدث InitiateCheckout ===== */
 function trackInitiateCheckout() {
@@ -919,7 +919,7 @@ document.querySelectorAll('.faq-question').forEach(q => {
   });
 });
 
-/* ===== إرسال الطلب إلى واتساب مع تتبع فيسبوك بكسل ===== */
+/* ===== إرسال الطلب إلى واتساب ===== */
 function submitOrder(e){
   e.preventDefault();
 
@@ -945,8 +945,8 @@ function submitOrder(e){
     return;
   }
 
-  // 4. رقم الواتساب
-  const myPhoneNumber = "212600000000";
+  // 4. رقم الواتساب الجديد
+  const myPhoneNumber = "212709583307";
 
   // 5. تجهيز الرسالة
   const message =
@@ -958,7 +958,7 @@ function submitOrder(e){
     `📦 *الكمية:* ${quantity}\n\n` +
     `✅ أرجو تأكيد الطلب في أقرب وقت.`;
 
-  // 6. فتح الواتساب
+  // 6. فتح الواتساب على رقمك
   const whatsappUrl = `https://wa.me/${myPhoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
 
