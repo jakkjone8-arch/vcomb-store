@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="مشط V-Comb الكهربائي للتخلص من القمل والصيبان بقوة الشفط - آمن وفعّال للعائلة بأكملها">
+<title>مشط V-Comb الكهربائي | تخلص من القمل والصيبان نهائياً</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<!-- ===== فيسبوك بكسل ===== -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2114105769315161');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=2114105769315161&ev=PageView&noscript=1"/>
+</noscript>
+<!-- ===== نهاية فيسبوك بكسل ===== -->
+
+<style>
+:root{
+  --primary:#2563eb;
+  --primary-dark:#1e40af;
+  --accent:#dc2626;
+  --accent-dark:#b91c1c;
+  --success:#16a34a;
+  --bg:#f8fafc;
+  --text:#1e293b;
+  --muted:#64748b;
+  --white:#fff;
+  --border:#e2e8f0;
+  --gold:#f59e0b;
+  --whatsapp:#25d366;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Cairo',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;}
+
+/* ===== شريط العرض العلوي ===== */
+.top-bar{
+  background:linear-gradient(90deg,var(--accent),#ef4444,var(--accent));
+  color:#fff;text-align:center;padding:10px;font-weight:700;font-size:.95rem;
+  animation:pulse-bg 2s infinite;
+}
+@keyframes pulse-bg{0%,100%{opacity:1}50%{opacity:.85}}
+
+/* ===== الهيدر ===== */
+header{
+  background:linear-gradient(135deg,#1e3a8a,#2563eb 60%,#3b82f6);
+  color:#fff;padding:40px 20px 60px;position:relative;overflow:hidden;
+}
+header::before{
+  content:'';position:absolute;top:-50%;right:-10%;width:400px;height:400px;
+  background:radial-gradient(circle,rgba(255,255,255,.15),transparent 70%);border-radius:50%;
+}
+.header-inner{
+  max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;
+  gap:40px;align-items:center;position:relative;z-index:1;
+}
+.urgency-badge{
+  display:inline-block;
+  background:rgba(251,191,36,.15);
+  border:2px solid #fbbf24;
+  color:#fbbf24;
+  padding:8px 18px;
+  border-radius:30px;
+  font-size:.9rem;
+  font-weight:700;
+  margin-bottom:20px;
+  animation:blink-warning 1.5s infinite;
+}
+@keyframes blink-warning{0%,100%{opacity:1}50%{opacity:.6}}
+.hero-text h1{font-size:2.1rem;font-weight:900;line-height:1.35;margin-bottom:20px;}
+.hero-text h1 span{display:block;color:#fbbf24;font-size:2.2rem;margin-top:8px;text-shadow:0 4px 15px rgba(251,191,36,.4);}
+.hero-text .subtitle{font-size:1.05rem;opacity:.95;margin-bottom:15px;}
+.pain-points{list-style:none;margin:20px 0 25px;padding:0;}
+.pain-points li{padding:8px 0;font-size:1rem;opacity:.95;display:flex;align-items:center;gap:8px;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:25px;}
+.badge{
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);
+  padding:6px 14px;border-radius:20px;font-size:.85rem;font-weight:600;
+  backdrop-filter:blur(5px);
+}
+.scarcity{
+  margin-top:20px;font-size:.95rem;background:rgba(220,38,38,.2);
+  border:1px dashed rgba(255,255,255,.4);padding:10px 15px;
+  border-radius:10px;display:inline-block;
+}
+.scarcity strong{color:#fbbf24;}
+#stock-count{color:#fff;background:var(--accent);padding:2px 10px;border-radius:20px;font-weight:900;animation:pulse-bg 1s infinite;}
+.hero-image{text-align:center;position:relative;}
+.hero-image img{
+  max-width:100%;width:380px;border-radius:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,.35);
+  transform:rotate(-3deg);transition:transform .4s;
+  border:4px solid rgba(255,255,255,.2);
+}
+.hero-image img:hover{transform:rotate(0) scale(1.03);}
+.discount-badge{
+  position:absolute;top:-15px;left:0;background:var(--accent);color:#fff;
+  width:90px;height:90px;border-radius:50%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;font-weight:900;
+  box-shadow:0 8px 20px rgba(220,38,38,.5);animation:shake 2s infinite;z-index:2;
+}
+.discount-badge span:first-child{font-size:1.6rem;line-height:1;}
+.discount-badge span:last-child{font-size:.8rem;}
+@keyframes shake{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+.sold-badge{
+  position:absolute;bottom:-15px;right:50%;transform:translateX(50%);
+  background:#fff;color:var(--text);padding:8px 18px;border-radius:30px;
+  font-size:.85rem;font-weight:700;box-shadow:0 8px 25px rgba(0,0,0,.3);
+  white-space:nowrap;
+}
+
+/* ===== الأزرار ===== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:linear-gradient(135deg,var(--accent),#ef4444);
+  color:#fff;padding:16px 42px;border:none;border-radius:50px;
+  font-size:1.15rem;font-weight:700;cursor:pointer;text-decoration:none;
+  box-shadow:0 10px 25px rgba(220,38,38,.4);transition:all .3s;font-family:inherit;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 30px rgba(220,38,38,.55);}
+.btn:active{transform:translateY(0);}
+.btn-whatsapp{background:linear-gradient(135deg,var(--whatsapp),#1ebe5a);box-shadow:0 10px 25px rgba(37,211,102,.4);}
+.btn-whatsapp:hover{box-shadow:0 15px 30px rgba(37,211,102,.55);}
+.btn-block{display:flex;width:100%;}
+.btn-pulse{animation:btn-pulse 1.8s infinite;}
+@keyframes btn-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+
+/* ===== شريط الثقة ===== */
+.trust-bar{background:#fff;padding:25px 20px;box-shadow:0 4px 15px rgba(0,0,0,.05);}
+.trust-inner{
+  max-width:1200px;margin:0 auto;display:grid;
+  grid-template-columns:repeat(3,1fr);gap:20px;text-align:center;
+}
+.trust-item .icon{font-size:2rem;margin-bottom:5px;}
+.trust-item p{font-size:.9rem;font-weight:600;color:var(--muted);}
+
+/* ===== الأقسام ===== */
+section{padding:70px 20px;}
+.container{max-width:1200px;margin:0 auto;}
+.section-title{text-align:center;margin-bottom:50px;}
+.section-title h2{font-size:2rem;color:var(--primary-dark);margin-bottom:10px;font-weight:900;}
+.section-title p{color:var(--muted);font-size:1.05rem;}
+.section-title::after{
+  content:'';display:block;width:80px;height:4px;
+  background:linear-gradient(90deg,var(--accent),var(--gold));
+  margin:15px auto 0;border-radius:2px;
+}
+
+/* ===== المشاكل ===== */
+.problems{background:#fff;}
+.problems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;}
+.problem-card{background:#fef2f2;border-right:4px solid var(--accent);padding:25px;border-radius:12px;text-align:center;}
+.problem-card .emoji{font-size:2.5rem;margin-bottom:12px;}
+.problem-card h3{color:var(--accent-dark);margin-bottom:8px;font-size:1.1rem;}
+.problem-card p{color:var(--muted);font-size:.95rem;}
+
+/* ===== آلية العمل ===== */
+.mechanism{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);}
+.mechanism-inner{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+.mechanism-image img{
+  width:100%;max-width:450px;border-radius:20px;
+  box-shadow:0 20px 50px rgba(37,99,235,.25);display:block;margin:auto;
+}
+.mechanism-text h2{font-size:1.8rem;color:var(--primary-dark);margin-bottom:20px;font-weight:900;}
+.mechanism-text p{font-size:1.05rem;color:var(--text);margin-bottom:15px;line-height:1.8;}
+.mechanism-text strong{color:var(--primary-dark);}
+
+/* ===== المميزات ===== */
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+.feature-card{
+  background:#fff;padding:35px 25px;border-radius:16px;text-align:center;
+  box-shadow:0 4px 20px rgba(0,0,0,.06);transition:all .3s;border:2px solid transparent;
+}
+.feature-card:hover{
+  transform:translateY(-8px);border-color:var(--primary);
+  box-shadow:0 15px 35px rgba(37,99,235,.15);
+}
+.feature-icon{font-size:3rem;margin-bottom:15px;display:inline-block;}
+.feature-card h3{color:var(--primary-dark);margin-bottom:10px;font-size:1.15rem;}
+.feature-card p{color:var(--muted);font-size:.95rem;}
+
+/* ===== كيف يعمل ===== */
+.how-it-works{background:#fff;}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;}
+.step{text-align:center;padding:30px 20px;background:#f8fafc;border-radius:16px;position:relative;}
+.step-number{
+  width:55px;height:55px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;font-weight:900;margin:0 auto 15px;
+  box-shadow:0 8px 20px rgba(37,99,235,.35);
+}
+.step h3{margin-bottom:10px;color:var(--primary-dark);}
+.step p{color:var(--muted);font-size:.95rem;}
+
+/* ===== المعرض ===== */
+.gallery{background:linear-gradient(135deg,#1e293b,#0f172a);color:#fff;}
+.gallery .section-title h2{color:#fff;}
+.gallery .section-title p{color:#94a3b8;}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.gallery-item{
+  border-radius:16px;overflow:hidden;position:relative;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);transition:transform .4s;background:#1e293b;
+}
+.gallery-item:hover{transform:scale(1.03);}
+.gallery-item img{width:100%;height:320px;object-fit:cover;display:block;transition:transform .4s;}
+.gallery-item:hover img{transform:scale(1.08);}
+.gallery-item::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.4),transparent 60%);
+  pointer-events:none;
+}
+
+/* ===== آراء العملاء ===== */
+.testimonials{background:#fff;}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+.testimonial{
+  background:#f8fafc;padding:30px;border-radius:16px;
+  border-top:4px solid var(--gold);position:relative;
+}
+.testimonial::before{
+  content:'"';position:absolute;top:10px;left:20px;
+  font-size:4rem;color:var(--gold);opacity:.3;font-family:Georgia,serif;line-height:1;
+}
+.stars{color:var(--gold);margin-bottom:12px;font-size:1.1rem;}
+.testimonial p{color:var(--text);margin-bottom:15px;font-style:italic;}
+.customer{display:flex;align-items:center;gap:12px;}
+.customer-avatar{
+  width:45px;height:45px;border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;font-size:1.1rem;
+}
+.customer-info strong{display:block;font-size:.95rem;}
+.customer-info small{color:var(--muted);font-size:.8rem;}
+
+/* ===== مقارنة ===== */
+.comparison{background:#f1f5f9;}
+.comparison-table{
+  background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);max-width:800px;margin:auto;
+}
+.comparison-table table{width:100%;border-collapse:collapse;}
+.comparison-table th{background:var(--primary-dark);color:#fff;padding:18px;font-size:1rem;}
+.comparison-table th:last-child{background:var(--success);}
+.comparison-table td{padding:15px;text-align:center;border-bottom:1px solid var(--border);}
+.comparison-table tr:last-child td{border-bottom:none;}
+.comparison-table td:first-child{text-align:right;font-weight:600;}
+.yes{color:var(--success);font-size:1.3rem;font-weight:900;}
+.no{color:var(--accent);font-size:1.3rem;font-weight:900;}
+
+/* ===== العرض ===== */
+.offer{background:linear-gradient(135deg,var(--primary-dark),var(--primary));color:#fff;text-align:center;}
+.offer .section-title h2{color:#fff;}
+.offer .section-title p{color:#cbd5e1;}
+.countdown{display:flex;justify-content:center;gap:15px;margin:30px 0;flex-wrap:wrap;}
+.countdown-box{
+  background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.3);
+  border-radius:12px;padding:15px 20px;min-width:85px;backdrop-filter:blur(10px);
+}
+.countdown-box .num{font-size:2rem;font-weight:900;display:block;line-height:1;}
+.countdown-box .label{font-size:.8rem;opacity:.9;margin-top:5px;display:block;}
+.price-box{
+  background:#fff;color:var(--text);border-radius:20px;padding:35px;
+  max-width:450px;margin:30px auto 0;box-shadow:0 20px 50px rgba(0,0,0,.3);
+}
+.old-price{color:var(--muted);text-decoration:line-through;font-size:1.1rem;}
+.new-price{color:var(--accent);font-size:2.5rem;font-weight:900;margin:10px 0;}
+.save-badge{
+  display:inline-block;background:#fef3c7;color:#92400e;
+  padding:6px 16px;border-radius:20px;font-weight:700;font-size:.9rem;margin-bottom:20px;
+}
+
+/* ===== نموذج الطلب ===== */
+.order-section{background:#fff;}
+.order-form{
+  max-width:550px;margin:auto;background:#f8fafc;padding:40px;
+  border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,.08);border:1px solid var(--border);
+}
+.form-group{margin-bottom:18px;}
+.form-group label{display:block;margin-bottom:8px;font-weight:600;color:var(--text);font-size:.95rem;}
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;padding:14px 16px;border:2px solid var(--border);
+  border-radius:10px;font-size:1rem;font-family:inherit;
+  transition:border-color .3s;background:#fff;color:var(--text);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:none;border-color:var(--primary);
+  box-shadow:0 0 0 4px rgba(37,99,235,.1);
+}
+.form-group textarea{resize:vertical;min-height:90px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px;}
+
+/* ===== الأسئلة الشائعة ===== */
+.faq{background:#f1f5f9;}
+.faq-list{max-width:800px;margin:auto;}
+.faq-item{
+  background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+.faq-question{
+  padding:20px 25px;cursor:pointer;display:flex;justify-content:space-between;
+  align-items:center;font-weight:700;font-size:1rem;transition:background .3s;
+}
+.faq-question:hover{background:#f8fafc;}
+.faq-question::after{
+  content:'+';font-size:1.5rem;color:var(--primary);font-weight:300;transition:transform .3s;
+}
+.faq-item.active .faq-question::after{transform:rotate(45deg);}
+.faq-answer{
+  max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;
+  padding:0 25px;color:var(--muted);
+}
+.faq-item.active .faq-answer{max-height:300px;padding:0 25px 20px;}
+
+/* ===== الفوتر ===== */
+footer{background:#0f172a;color:#94a3b8;text-align:center;padding:40px 20px;}
+footer .footer-logo{font-size:1.5rem;font-weight:900;color:#fff;margin-bottom:15px;}
+footer .footer-links{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-bottom:20px;}
+footer .footer-links a{color:#94a3b8;text-decoration:none;font-size:.9rem;transition:color .3s;}
+footer .footer-links a:hover{color:#fff;}
+footer .copyright{font-size:.85rem;border-top:1px solid #1e293b;padding-top:20px;}
+
+/* ===== زر واتساب عائم ===== */
+.whatsapp-float{
+  position:fixed;bottom:25px;left:25px;background:var(--whatsapp);color:#fff;
+  width:60px;height:60px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:1.8rem;box-shadow:0 8px 25px rgba(37,211,102,.5);
+  z-index:999;text-decoration:none;transition:transform .3s;
+  animation:wa-pulse 2s infinite;
+}
+.whatsapp-float:hover{transform:scale(1.1);}
+@keyframes wa-pulse{
+  0%,100%{box-shadow:0 8px 25px rgba(37,211,102,.5)}
+  50%{box-shadow:0 8px 25px rgba(37,211,102,.8),0 0 0 15px rgba(37,211,102,.1)}
+}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .header-inner{grid-template-columns:1fr;text-align:center;}
+  .hero-text h1{font-size:1.6rem;}
+  .hero-text h1 span{font-size:1.7rem;}
+  .urgency-badge{font-size:.8rem;padding:6px 14px;}
+  .pain-points li{font-size:.9rem;}
+  .sold-badge{font-size:.75rem;padding:6px 14px;}
+  .hero-badges{justify-content:center;}
+  .mechanism-inner{grid-template-columns:1fr;}
+  .trust-inner{grid-template-columns:repeat(2,1fr);}
+  .discount-badge{left:auto;right:0;top:-10px;width:75px;height:75px;}
+  .discount-badge span:first-child{font-size:1.3rem;}
+}
+@media(max-width:500px){
+  section{padding:50px 15px;}
+  .hero-text h1{font-size:1.3rem;}
+  .hero-text h1 span{font-size:1.4rem;}
+  .pain-points{margin:15px 0;}
+  .pain-points li{font-size:.85rem;padding:5px 0;}
+  .scarcity{font-size:.8rem;padding:8px 12px;}
+  .section-title h2{font-size:1.5rem;}
+  .form-row{grid-template-columns:1fr;}
+  .order-form{padding:25px 20px;}
+  .new-price{font-size:2rem;}
+  .countdown-box{min-width:70px;padding:12px 14px;}
+  .countdown-box .num{font-size:1.5rem;}
+  .btn{padding:14px 28px;font-size:1rem;}
+  .gallery-item img{height:260px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== شريط العرض ===== -->
+<div class="top-bar">
+  🔥 عرض خاص: خصم 50% + شحن مجاني لفترة محدودة!
+</div>
+
+<!-- ===== الهيدر ===== -->
+<header>
+  <div class="header-inner">
+    <div class="hero-text">
+      <div class="urgency-badge">
+        ⚠️ تحذير: القمل ينتشر بسرعة في المدارس!
+      </div>
+      <h1>
+        طفلك يحك رأسه باستمرار؟
+        <span>تخلص من القمل والصيبان نهائياً</span>
+        بدون مواد كيميائية!
+      </h1>
+      <p class="subtitle">
+        🛑 لا تعذّب طفلك بالشامبوهات الكيميائية والمشط التقليدي...
+        <br>
+        <strong style="color:#fbbf24;">مشط V-Comb الكهربائي</strong> بقوة الشفط يجذب القمل والصيبان ويحتجزها داخل فلتر مغلق.
+      </p>
+      <ul class="pain-points">
+        <li>❌ تعبت من عودة القمل بعد كل علاج؟</li>
+        <li>❌ خايف من المواد الكيميائية على صحة طفلك؟</li>
+        <li>❌ دفعت الكثير على منتجات لم تنفع؟</li>
+      </ul>
+      <div class="hero-badges">
+        <span class="badge">✅ آمن للأطفال</span>
+        <span class="badge">⚡ قوة شفط قوية</span>
+        <span class="badge">🚚 دفع عند الاستلام</span>
+      </div>
+      <a href="#order" class="btn btn-pulse" onclick="trackInitiateCheckout()">
+        🔥 اطلب الآن — خصم 50% لفترة محدودة
+      </a>
+      <p class="scarcity">
+        ⏳ <strong>تنبيه:</strong> تبقّى <span id="stock-count">7</span> قطع فقط بهذا السعر!
+      </p>
+    </div>
+    <div class="hero-image">
+      <div class="discount-badge">
+        <span>-50%</span>
+        <span>خصم</span>
+      </div>
+      <img src="https://i.postimg.cc/fTQHpnRs/0f3c21e2-283d-4b3b-a5b8-40fe8aa310aa.jpg" alt="مشط V-Comb الكهربائي" loading="eager">
+      <div class="sold-badge">🔥 +15,000 عميل سعيد</div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== شريط الثقة ===== -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="icon">🚚</div>
+      <p>شحن سريع لجميع المدن</p>
+    </div>
+    <div class="trust-item">
+      <div class="icon">💵</div>
+      <p>الدفع عند الاستلام</p>
+    </div>
+    <div class="trust-item">
+      <div class="icon">📞</div>
+      <p>دعم 24/7</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== المشاكل ===== -->
+<section class="problems">
+  <div class="container">
+    <div class="section-title">
+      <h2>هل تعاني من هذه المشاكل؟</h2>
+      <p>القمل مشكلة تؤرق كل عائلة... لكن لها حل!</p>
+    </div>
+    <div class="problems-grid">
+      <div class="problem-card">
+        <div class="emoji">😫</div>
+        <h3>حكة مزعجة مستمرة</h3>
+        <p>طفلك يحك رأسه طوال الوقت ولا يستطيع النوم</p>
+      </div>
+      <div class="problem-card">
+        <div class="emoji">💸</div>
+        <h3>تكاليف باهظة</h3>
+        <p>تنفق المال على مستحضرات كيميائية لا تجدي نفعاً</p>
+      </div>
+      <div class="problem-card">
+        <div class="emoji">🧪</div>
+        <h3>مواد كيميائية ضارة</h3>
+        <p>المبيدات التقليدية خطيرة على صحة الأطفال</p>
+      </div>
+      <div class="problem-card">
+        <div class="emoji">🔁</div>
+        <h3>عودة القمل مجدداً</h3>
+        <p>القمل يعود بعد أيام رغم استخدام الشامبوهات</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== آلية عمل المنتج ===== -->
+<section class="mechanism">
+  <div class="container">
+    <div class="section-title">
+      <h2>⚙️ كيف يعمل مشط V-Comb؟</h2>
+      <p>تقنية مبتكرة تجمع بين التمشيط الميكانيكي وقوة الشفط الكهربائي</p>
+    </div>
+    <div class="mechanism-inner">
+      <div class="mechanism-image">
+        <img src="https://i.postimg.cc/59C7sN1Z/3accebb3-aa69-4bc6-a0cb-cb711f7418d7.jpg" alt="آلية عمل مشط V-Comb" loading="lazy">
+      </div>
+      <div class="mechanism-text">
+        <h2>آلية العمل الذكية</h2>
+        <p>
+          يعتمد الجهاز على <strong>أسنان متينة ومتقاربة</strong> مصنوعة من الفولاذ المقاوم للصدأ (الستانلس ستيل) ذات حواف مستديرة، لتمشيط الشعر بسلاسة ولطف دون تهييج فروة الرأس.
+        </p>
+        <p>
+          أثناء تمرير المشط على <strong>الشعر الجاف</strong>، يقوم محرك الجهاز بتوليد <strong>قوة شفط سريعة</strong> تجذب القمل والحشرات الطفيلية وبيوضها مباشرة من خصلات الشعر.
+        </p>
+        <p>
+          تُحتجز الحشرات داخل <strong>فلتر التقاط مغلق وقابل للاستبدال</strong>، مما يمنع انتقال العدوى أو سقوط الحشرات على الملابس والأثاث.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== المميزات ===== -->
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>لماذا يختار الآلاف مشط V-Comb؟</h2>
+      <p>فوائد ومميزات تجعله الأفضل في فئته</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <h3>خالٍ تماماً من الكيماويات</h3>
+        <p>حل طبيعي 100% مثالي للأطفال والذين يعانون من حساسية جلدية تجاه الشامبوهات التقليدية.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>آمن ولطيف على فروة الرأس</h3>
+        <p>أسنان دائرية ناعمة لا تسبب الخدوش أو الألم أثناء التمشيط، لتجربة مريحة للأطفال.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧬</div>
+        <h3>نظام فلترة صحي</h3>
+        <p>يحتجز القمل والصيبان داخل فلاتر مخصصة يتم التخلص منها برميها في القمامة دون لمس الحشرات.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <h3>سهل الاستخدام والتنظيف</h3>
+        <p>يعمل على الشعر الجاف تماماً، ومزوّد بإضاءة LED مدمجة لفحص فروة الرأس بدقة.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">♻️</div>
+        <h3>اقتصادي وقابل لإعادة الاستخدام</h3>
+        <p>يمكن لجميع أفراد الأسرة استخدام الجهاز نفسه بعد تنظيف الأسنان بالفرشاة المرفقة أو الماء الساخن.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>نتائج فورية</h3>
+        <p>قوة الشفط تجذب القمل والصيبان مباشرة من خصلات الشعر من أول استخدام.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== كيف يعمل ===== -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-title">
+      <h2>كيف تستخدمه في 3 خطوات؟</h2>
+      <p>سهل جداً... أي شخص يستطيع استخدامه</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>شغّل المشط</h3>
+        <p>اضغط على زر التشغيل وستضيء لمبة LED المدمجة</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>مرّر على الشعر الجاف</h3>
+        <p>مرر المشط على الشعر الجاف من الجذور حتى الأطراف</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>تخلّص من الفلتر</h3>
+        <p>أزل الفلتر الممتلئ بالقمل وارمِه في القمامة مباشرة</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== المعرض ===== -->
+<section class="gallery">
+  <div class="container">
+    <div class="section-title">
+      <h2>شاهد المنتج عن قرب</h2>
+      <p>تصميم أنيق وعملي يناسب الجميع</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/fTQHpnRs/0f3c21e2-283d-4b3b-a5b8-40fe8aa310aa.jpg" alt="مشط V-Comb - صورة 1" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/5NWPTd2W/7d2c8f67-a8c0-48ed-aee3-a40893e7b25c.jpg" alt="مشط V-Comb - صورة 2" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/59C7sN1Z/3accebb3-aa69-4bc6-a0cb-cb711f7418d7.jpg" alt="مشط V-Comb - صورة 3" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/Wbc9CLbK/8eb2f302-9e0f-437e-bbe5-588c23c47e31.jpg" alt="مشط V-Comb - صورة 4" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== آراء العملاء ===== -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <h2>ماذا يقول عملاؤنا؟</h2>
+      <p>أكثر من 15,000 عميل سعيد حول العالم</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>جربت كل شيء لبناتي ولم ينفع... مشط V-Comb خلصني من المشكلة من أول استخدام. شكراً جزيلاً!</p>
+        <div class="customer">
+          <div class="customer-avatar">ف</div>
+          <div class="customer-info">
+            <strong>فاطمة الزهراء</strong>
+            <small>الدار البيضاء، المغرب</small>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>كنت خائفاً من استخدام المواد الكيميائية على طفلي. هذا المشط آمن وفعّال، والنتيجة مذهلة!</p>
+        <div class="customer">
+          <div class="customer-avatar">أ</div>
+          <div class="customer-info">
+            <strong>أحمد بن علي</strong>
+            <small>الرياض، السعودية</small>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>سهل الاستخدام والنتيجة سريعة جداً. أنصح به كل أم لديها أطفال في المدرسة.</p>
+        <div class="customer">
+          <div class="customer-avatar">ن</div>
+          <div class="customer-info">
+            <strong>نور الهدى</strong>
+            <small>دبي، الإمارات</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== المقارنة ===== -->
+<section class="comparison">
+  <div class="container">
+    <div class="section-title">
+      <h2>لماذا V-Comb أفضل من الطرق التقليدية؟</h2>
+      <p>قارن بنفسك والفرق واضح</p>
+    </div>
+    <div class="comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th>المقارنة</th>
+            <th>الطرق التقليدية</th>
+            <th>مشط V-Comb</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>الفعالية</td>
+            <td class="no">✗</td>
+            <td class="yes">✓</td>
+          </tr>
+          <tr>
+            <td>آمن للأطفال</td>
+            <td class="no">✗</td>
+            <td class="yes">✓</td>
+          </tr>
+          <tr>
+            <td>خالٍ من الكيماويات</td>
+            <td class="no">✗</td>
+            <td class="yes">✓</td>
+          </tr>
+          <tr>
+            <td>قابل لإعادة الاستخدام</td>
+            <td class="no">✗</td>
+            <td class="yes">✓</td>
+          </tr>
+          <tr>
+            <td>نتيجة فورية</td>
+            <td class="no">✗</td>
+            <td class="yes">✓</td>
+          </tr>
+          <tr>
+            <td>بدون لمس الحشرات</td>
+            <td class="no">✗</td>
+            <td class="yes">✓</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== العرض ===== -->
+<section class="offer" id="order">
+  <div class="container">
+    <div class="section-title">
+      <h2>🔥 عرض محدود — لا تفوّته!</h2>
+      <p>ينتهي العرض خلال:</p>
+    </div>
+    <div class="countdown" id="countdown">
+      <div class="countdown-box">
+        <span class="num" id="days">00</span>
+        <span class="label">يوم</span>
+      </div>
+      <div class="countdown-box">
+        <span class="num" id="hours">00</span>
+        <span class="label">ساعة</span>
+      </div>
+      <div class="countdown-box">
+        <span class="num" id="minutes">00</span>
+        <span class="label">دقيقة</span>
+      </div>
+      <div class="countdown-box">
+        <span class="num" id="seconds">00</span>
+        <span class="label">ثانية</span>
+      </div>
+    </div>
+    <div class="price-box">
+      <div class="save-badge">💰 وفّر 150 درهم</div>
+      <div class="old-price">299 درهم</div>
+      <div class="new-price">149 درهم</div>
+      <p style="color:var(--muted);margin-bottom:20px;">شامل الشحن المجاني لجميع المدن</p>
+      <a href="#order-form" class="btn btn-block" onclick="trackInitiateCheckout()">🛒 اطلب الآن — الدفع عند الاستلام</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== نموذج الطلب ===== -->
+<section class="order-section" id="order-form">
+  <div class="container">
+    <div class="section-title">
+      <h2>📝 املأ بياناتك لتأكيد الطلب</h2>
+      <p>سيتم إرسال طلبك مباشرة عبر واتساب</p>
+    </div>
+    <form class="order-form" onsubmit="submitOrder(event)">
+      <div class="form-group">
+        <label for="name">الاسم الكامل *</label>
+        <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">رقم الهاتف *</label>
+          <input type="tel" id="phone" name="phone" placeholder="06XXXXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label for="city">المدينة *</label>
+          <input type="text" id="city" name="city" placeholder="مثال: الدار البيضاء" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address">العنوان الكامل *</label>
+        <textarea id="address" name="address" placeholder="الحي، الشارع، رقم المنزل..." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="quantity">الكمية</label>
+        <select id="quantity" name="quantity">
+          <option value="1 مشط — 149 درهم">1 مشط — 149 درهم</option>
+          <option value="2 مشط — 269 درهم">2 مشط — 269 درهم (وفّر 29 درهم)</option>
+          <option value="3 مشط — 399 درهم">3 مشط — 399 درهم (وفّر 48 درهم)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-whatsapp btn-block btn-pulse">
+        💬 إرسال الطلب عبر واتساب
+      </button>
+      <p style="text-align:center;color:var(--muted);font-size:.85rem;margin-top:15px;">
+        🔒 معلوماتك آمنة وسيتم التواصل معك عبر واتساب
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== الأسئلة الشائعة ===== -->
+<section class="faq">
+  <div class="container">
+    <div class="section-title">
+      <h2>الأسئلة الشائعة</h2>
+      <p>كل ما تريد معرفته عن المنتج</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">هل المشط آمن للأطفال؟</div>
+        <div class="faq-answer">
+          <p>نعم، مشط V-Comb آمن تماماً للأطفال والكبار. أسنانه مصنوعة من الفولاذ المقاوم للصدأ بحواف دائرية ناعمة لا تسبب أي خدوش أو ألم لفروة الرأس، وهو خالٍ تماماً من المواد الكيميائية.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">كيف يعمل المشط بالضبط؟</div>
+        <div class="faq-answer">
+          <p>يجمع المشط بين التمشيط الميكانيكي وقوة الشفط الكهربائي. أثناء تمريره على الشعر الجاف، يولّد المحرك قوة شفط سريعة تجذب القمل والصيبان من الشعر وتحتجزها داخل فلتر مغلق قابل للاستبدال.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">هل يعمل على الشعر المبلل؟</div>
+        <div class="faq-answer">
+          <p>لا، يعمل الجهاز بكفاءة عالية على <strong>الشعر الجاف تماماً</strong> فقط. تأكد من جفاف الشعر قبل الاستخدام للحصول على أفضل نتيجة.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">كيف أنظف المشط بعد الاستخدام؟</div>
+        <div class="faq-answer">
+          <p>أزل الفلتر الممتلئ وارمِه في القمامة مباشرة دون لمس الحشرات. ثم نظّف الأسنان المعدنية جيداً بالفرشاة المرفقة أو بالماء الساخن. يمكن لجميع أفراد الأسرة استخدام الجهاز نفسه.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">هل يحتاج بطاريات؟</div>
+        <div class="faq-answer">
+          <p>نعم، يعمل ببطاريتين AA (غير مرفقتين) ويمكن استخدامه لعدة أشهر قبل الحاجة لتغييرهما. بعض الموديلات مزودة بإضاءة LED مدمجة لتسهيل الفحص.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">كيف يتم الدفع؟</div>
+        <div class="faq-answer">
+          <p>الدفع عند الاستلام (Cash on Delivery) — تدفع فقط عندما يصلك المنتج إلى باب منزلك. لا حاجة لدفع مسبق.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">كم يستغرق الشحن؟</div>
+        <div class="faq-answer">
+          <p>يستغرق الشحن من 2 إلى 5 أيام عمل حسب مدينتك. الشحن مجاني لجميع المدن خلال فترة العرض.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== الفوتر ===== -->
+<footer>
+  <div class="footer-logo">V-Comb</div>
+  <div class="footer-links">
+    <a href="#">الشروط والأحكام</a>
+    <a href="#">سياسة الخصوصية</a>
+    <a href="#">اتصل بنا</a>
+  </div>
+  <div class="copyright">
+    © 2025 مشط V-Comb — جميع الحقوق محفوظة.
+  </div>
+</footer>
+
+<!-- ===== زر واتساب عائم ===== -->
+<a href="https://wa.me/212600000000" class="whatsapp-float" target="_blank" aria-label="تواصل عبر واتساب">
+  💬
+</a>
+
+<script>
+/* ===== رقم الواتساب (محفوظ كما هو) ===== */
+const WHATSAPP_NUMBER = "212600000000";
+
+/* ===== تتبع حدث InitiateCheckout ===== */
+function trackInitiateCheckout() {
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'InitiateCheckout', {
+      value: 149,
+      currency: 'MAD'
+    });
+    console.log('✅ تم إرسال حدث InitiateCheckout لفيسبوك');
+  }
+}
+
+/* ===== العد التنازلي ===== */
+(function(){
+  const end = new Date();
+  end.setDate(end.getDate() + 2);
+  end.setHours(23, 59, 59, 0);
+  function pad(n){ return String(n).padStart(2, '0'); }
+  function update(){
+    const now = new Date().getTime();
+    const diff = end.getTime() - now;
+    if(diff <= 0){
+      document.getElementById('days').textContent = '00';
+      document.getElementById('hours').textContent = '00';
+      document.getElementById('minutes').textContent = '00';
+      document.getElementById('seconds').textContent = '00';
+      return;
+    }
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const m = Math.floor((diff / (1000 * 60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+    document.getElementById('days').textContent = pad(d);
+    document.getElementById('hours').textContent = pad(h);
+    document.getElementById('minutes').textContent = pad(m);
+    document.getElementById('seconds').textContent = pad(s);
+  }
+  update();
+  setInterval(update, 1000);
+})();
+
+/* ===== تناقص المخزون ===== */
+(function(){
+  const stockEl = document.getElementById('stock-count');
+  if(!stockEl) return;
+  let stock = 7;
+  setInterval(() => {
+    if(stock > 2){ stock--; stockEl.textContent = stock; }
+  }, 45000);
+})();
+
+/* ===== الأسئلة الشائعة ===== */
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    if(!isOpen) item.classList.add('active');
+  });
+});
+
+/* ===== إرسال الطلب إلى واتساب مع تتبع فيسبوك بكسل ===== */
+function submitOrder(e){
+  e.preventDefault();
+
+  // 1. تتبع حدث الشراء في الفيسبوك بكسل
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Purchase', {
+      value: 149,
+      currency: 'MAD'
+    });
+    console.log('✅ تم إرسال حدث Purchase لفيسبوك');
+  }
+
+  // 2. استخراج البيانات
+  const name = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const city = document.getElementById('city').value.trim();
+  const address = document.getElementById('address').value.trim();
+  const quantity = document.getElementById('quantity').value;
+
+  // 3. التحقق من البيانات
+  if(!name || !phone || !city || !address){
+    alert('الرجاء ملء جميع الحقول المطلوبة');
+    return;
+  }
+
+  // 4. رقم الواتساب
+  const myPhoneNumber = "212600000000";
+
+  // 5. تجهيز الرسالة
+  const message =
+    `🛒 *طلب جديد لمشط V-Comb*\n\n` +
+    `👤 *الاسم:* ${name}\n` +
+    `📱 *الهاتف:* ${phone}\n` +
+    `🏙️ *المدينة:* ${city}\n` +
+    `🏠 *العنوان:* ${address}\n` +
+    `📦 *الكمية:* ${quantity}\n\n` +
+    `✅ أرجو تأكيد الطلب في أقرب وقت.`;
+
+  // 6. فتح الواتساب
+  const whatsappUrl = `https://wa.me/${myPhoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, '_blank');
+
+  // 7. إعادة تعيين النموذج
+  e.target.reset();
+}
+
+/* ===== تمرير سلس ===== */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if(target){
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
